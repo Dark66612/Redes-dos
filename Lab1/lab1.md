@@ -49,25 +49,28 @@ $ git config --global user.email johndoe@example.com
 
 - **Respuesta:**
 
-    - Numero de Clientes: 1024
+        - Total hostss: 1024
+        - Hosts usables: 1022
 
 
 <li>¿Que clase y tipo de dirección es 10.10.10.0/24?.</li>
 
 - **Respuesta:**
 
-    - Clase A de tipo Privada
+        - Clase A de tipo Privada
 
 <li>¿Que información se puede inferir de la dirección 169.254.255.200/26?.</li>
 
 
 - **Respuesta:**
 
-    - Clase: B
+        - Clase: B
 
-    - Tipo: Privada
+        - Tipo: Privada
 
-    - Clientes: 64
+        - Total hosts: 64
+        
+        - Hosts usables: 62
 
 ## 3. [Caracterización de los adaptadores](#) ✔
 |Parámetro||Valor|
@@ -100,7 +103,7 @@ $ git config --global user.email johndoe@example.com
 ## 5. [Caracterización de la puerta de enlace](#) ✔
 |Parámetro|Valor|
 |--|--:|
-|Número de Entradas en la tabla ARP ||
+|Número de Entradas en la tabla ARP |11|
 |IPv4 Gateway|192.168.128.1|
 |MAC Gateway|88-D7-F6-DA-7A-33|
 |ISP|Claro|
@@ -128,9 +131,9 @@ $ git config --global user.email johndoe@example.com
 |Servidor|Ping/ms|Down/MB|Up/MB|
 |--|:--:|--:|--:|
 |[speed test][1]|19|17|15|
-|[Netflix][2]|8|380|640|
-|[Claro][3]|15|327.5|336.7|
-|[nperf][4]|32.70|311.4|341.1|
+|[Netflix][2]|8|38|64|
+|[Claro][3]|15|32.75|33.67|
+|[nperf][4]|32.70|31.14|34.11|
 
 >Nota: Para calcular el retardo de la red, usaremos el protocolo HTTP via servicio WEB.
 
@@ -154,40 +157,34 @@ $ git config --global user.email johndoe@example.com
 >Nota: Para calcular el retardo de la red, usaremos el comando ICMP/[tracert][13].
 
 ## 9. [Diagrama de Red](#) ✔
-- Realice un diagrama topológico de la red que le ofrece conectividad a internet.
-- Incluya todos los detalles de la red de area local a la que se encuentra conectado.
-- Incluya los saltos conocidos incluyendo el equipo de borde de su ISP.
+1. Realice un diagrama topológico de la red que le ofrece conectividad a internet.
 
-    - 1 ms    <1 ms    <1 ms  gateway.lan [192.168.128.1]
-    - 2     3 ms     2 ms     3 ms  10.79.112.1
-    - 3    10 ms     9 ms     9 ms  10.168.10.118
-    - 4    16 ms    16 ms    16 ms  peer-as14080.- pr02.bog1.tfbnw.net [157.240.70.79]
-    - 5    20 ms    19 ms    19 ms  ae20.pr02.bog1.tfbnw.net [157.240.70.78]
-    - 6    16 ms    16 ms    16 ms  po102.psw04.bog1.tfbnw.net [129.134.46.157]
-    - 7    16 ms    16 ms    16 ms  157.240.38.255
-    -  8    19 ms    18 ms    18 ms  edge-star-mini-shv-01-bog1.facebook.com [157.240.6.35]
+    ![](topografia1.png)
+
+2. Incluya todos los detalles de la red de area local a la que se encuentra conectado.
+    - **Respuesta:**
+
+            - Red DHCP
+            - 5G - 2.4G
+            - Fast Eternet 1GB
+3. Incluya los saltos conocidos incluyendo el equipo de borde de su ISP.
+
+    ![](salto1.png)
 
 ## 10. [Preguntas de conocimiento](#) ✔
 1. Cual es la dirección de red y de broadcast de un host que tiene una ip 192.168.10.10/30.
-- **Respuesta:**
+    - **Respuesta:**
 
-    - Direccion de broadcast: 192.168.10.11
-    - Direcicon de Red: 192.168.10.10
+            - Direccion de broadcast: 192.168.10.11
+            - Direcicon de Red: 192.168.10.10
 2. Cuantos equipos o.
-- **Respuesta:**
+    - **Respuesta:**
 
-    - Total hosts: 4
-    - Hosts usables: 2
+            - Total hosts: 4
+            - Hosts usables: 2
 3. Incluya los saltos conocidos incluyendo el equipo de borde de su ISP.
 
-    - 1 ms    <1 ms    <1 ms  gateway.lan [192.168.128.1]
-    - 2     3 ms     2 ms     3 ms  10.79.112.1
-    - 3    10 ms     9 ms     9 ms  10.168.10.118
-    - 4    16 ms    16 ms    16 ms  peer-as14080.- pr02.bog1.tfbnw.net [157.240.70.79]
-    - 5    20 ms    19 ms    19 ms  ae20.pr02.bog1.tfbnw.net [157.240.70.78]
-    - 6    16 ms    16 ms    16 ms  po102.psw04.bog1.tfbnw.net [129.134.46.157]
-    - 7    16 ms    16 ms    16 ms  157.240.38.255
-    -  8    19 ms    18 ms    18 ms  edge-star-mini-shv-01-bog1.facebook.com [157.240.6.35]
+    ![](salto1.png)
 
 
 

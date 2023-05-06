@@ -43,27 +43,32 @@ $ git config --global user.email johndoe@example.com
 <ol type="a">
 <li>¿Cual es la dirección de red y de broadcast de un host que tiene una ip 192.168.10.10/30 .?</li>
 
-- **Respuesta:**
+ - **Respuesta:**
 
         - Direccion de broadcast: 192.168.10.11
         - Direcicon de Red: 192.168.10.10
 
 <li>¿Cuantos clientes puede tener la sub red 172.16.0.0/22?.</li>
 
-- **Respuesta:**
+ - **Respuesta:**
 
         - Total hostss: 1024
         - Hosts usables: 1022
 
 <li>¿Que clase y tipo de dirección es 10.10.10.0/24?.</li>
 
-- **Respuesta:**
+ - **Respuesta:**
 
         - Clase A de tipo Privada
 
 <li>¿Que información se puede inferir de la dirección 169.254.255.200/26?.</li>
 
+<<<<<<< HEAD
 - **Respuesta:**
+=======
+
+ - **Respuesta:**
+>>>>>>> d92a16b5e0a18b8f116576b96d10847071834732
 
         - Clase: B
 

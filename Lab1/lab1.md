@@ -42,8 +42,8 @@ $ git config --global user.email johndoe@example.com
 
 - **Respuesta:**
 
-    - Direccion de broadcast: 192.168.10.11
-    - Direcicon de Red: 192.168.10.10
+        - Direccion de broadcast: 192.168.10.11
+        - Direcicon de Red: 192.168.10.10
 
 <li>¿Cuantos clientes puede tener la sub red 172.16.0.0/22?.</li>
 

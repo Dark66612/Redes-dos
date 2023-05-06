@@ -45,21 +45,21 @@ $ git config --global user.email johndoe@example.com
 
 - **Respuesta:**
 
-  - Direccion de broadcast: 192.168.10.11
-  - Direcicon de Red: 192.168.10.10
+        - Direccion de broadcast: 192.168.10.11
+        - Direcicon de Red: 192.168.10.10
 
 <li>¿Cuantos clientes puede tener la sub red 172.16.0.0/22?.</li>
 
 - **Respuesta:**
 
-  - Total hostss: 1024
-  - Hosts usables: 1022
+        - Total hostss: 1024
+        - Hosts usables: 1022
 
 <li>¿Que clase y tipo de dirección es 10.10.10.0/24?.</li>
 
 - **Respuesta:**
 
-  - Clase A de tipo Privada
+        - Clase A de tipo Privada
 
 <li>¿Que información se puede inferir de la dirección 169.254.255.200/26?.</li>
 
@@ -68,13 +68,13 @@ $ git config --global user.email johndoe@example.com
 - **Respuesta:**
 
 
-  - Clase: B
+        - Clase: B
 
-  - Tipo: Privada
+        - Tipo: Privada
 
-  - Total hosts: 64
+        - Total hosts: 64
 
-  - Hosts usables: 62
+        - Hosts usables: 62
 
 ## 3. [Caracterización de los adaptadores](#) ✔
 

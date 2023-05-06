@@ -1,19 +1,24 @@
 # Telematics
+
 <p><code>Fundamentos de Telemática</code></p>
 <p>Creado por <code>Giancarlo Ortiz</code> para explicar los fundamentos de los <code>Sistemas de comunicaciones</code> en los cursos de telemática y redes de computadores.</p>
 
 # Practica de laboratorio 01
 
-## Objetivos 
+## Objetivos
 
 ### Objetivo General
+
 Proporcionar el conocimiento y generar las habilidades necesarias en la configuración y gestión de dispositivos de redes.
 
-### Objetivos Específicos:
-- Conocer los números necesarios para configurar y caracterizar los diferentes dispositivos de red. :+1: 
+### Objetivos Específicos
+
+- Conocer los números necesarios para configurar y caracterizar los diferentes dispositivos de red. :+1:
 
 ---
+
 ## 1. [Configurar el entorno de trabajo](#) ✔
+
 1. Instalar [VSCode][1_1]
 2. Instalar [Git][1_2]
 3. Crear una cuenta en [github][1_3]
@@ -33,8 +38,6 @@ $ git config --global user.email johndoe@example.com
 [1_3]:https://github.com/
 [1_4]:https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github
 
-
-
 ## 2. [Preguntas de conocimiento](#) ✔
 
 <ol type="a">
@@ -52,7 +55,6 @@ $ git config --global user.email johndoe@example.com
         - Total hostss: 1024
         - Hosts usables: 1022
 
-
 <li>¿Que clase y tipo de dirección es 10.10.10.0/24?.</li>
 
 - **Respuesta:**
@@ -60,7 +62,6 @@ $ git config --global user.email johndoe@example.com
         - Clase A de tipo Privada
 
 <li>¿Que información se puede inferir de la dirección 169.254.255.200/26?.</li>
-
 
 - **Respuesta:**
 
@@ -73,6 +74,7 @@ $ git config --global user.email johndoe@example.com
         - Hosts usables: 62
 
 ## 3. [Caracterización de los adaptadores](#) ✔
+
 |Parámetro||Valor|
 |--|:--:|--:|
 |Número de adaptadores Físicos|-->|2|
@@ -82,12 +84,11 @@ $ git config --global user.email johndoe@example.com
 |Código MAC del fabricante|-->|88-D7-F6|
 |MAC|-->|88-D7-F6-DA-7A-33|
 
-
-
 ## 4. [Caracterización de la red](#) ✔
+
 |Parámetro|Valor|
 |--|--:|
-|__Subnet__|192.168.254.0/24|
+|**Subnet**|192.168.254.0/24|
 |IPv4|192.168.128.8|
 |Subnet Mask decimal|24|
 |Subnet Mask octetos|255.255.255.0|
@@ -99,8 +100,8 @@ $ git config --global user.email johndoe@example.com
 
 >Nota: Para obtener los parámetros de la red, usaremos el comando [ipconfig][10] o [ifconfig][8].
 
-
 ## 5. [Caracterización de la puerta de enlace](#) ✔
+
 |Parámetro|Valor|
 |--|--:|
 |Número de Entradas en la tabla ARP |11|
@@ -110,11 +111,10 @@ $ git config --global user.email johndoe@example.com
 |[IP Publica][5]|181.62.52.121|
 |Sistema Autónomo|AS14080|
 
-
 >Nota: Para obtener los parámetros de la red, usaremos el comando [arp][11] y algún servicio web/HTTP.
 
-
 ## 6. [Retardo de la red](#) ✔
+
 |Servidor|IP|Tiempo promedio/ms|
 |--|--|--|
 |DNS Google|8.8.8.8|19ms|
@@ -126,8 +126,8 @@ $ git config --global user.email johndoe@example.com
 
 >Nota: Para calcular el retardo de la red, usaremos el protocolo ICMP/[ping][12] con al menos 10 paquetes.
 
-
 ## 7. [Capacidad del canal](#) ✔
+
 |Servidor|Ping/ms|Down/MB|Up/MB|
 |--|:--:|--:|--:|
 |[speed test][1]|19|17|15|
@@ -137,8 +137,8 @@ $ git config --global user.email johndoe@example.com
 
 >Nota: Para calcular el retardo de la red, usaremos el protocolo HTTP via servicio WEB.
 
-
 ## 8. [Distancia desde el host](#) ✔
+
 |Servidor|Ping/ms|Numero de Saltos|
 |--|:--:|--:|
 |google.com|16|8|
@@ -157,6 +157,7 @@ $ git config --global user.email johndoe@example.com
 >Nota: Para calcular el retardo de la red, usaremos el comando ICMP/[tracert][13].
 
 ## 9. [Diagrama de Red](#) ✔
+
 1. Realice un diagrama topológico de la red que le ofrece conectividad a internet.
 
     ![](topografia1.png)
@@ -172,6 +173,7 @@ $ git config --global user.email johndoe@example.com
     ![](salto1.png)
 
 ## 10. [Preguntas de conocimiento](#) ✔
+
 1. Cual es la dirección de red y de broadcast de un host que tiene una ip 192.168.10.10/30.
     - **Respuesta:**
 
@@ -186,8 +188,6 @@ $ git config --global user.email johndoe@example.com
 
     ![](salto1.png)
 
-
-
 [1]:https://www.speedtest.net/es
 [2]:https://fast.com/es/#
 [3]:http://speedtest.claro.net.co/
@@ -195,24 +195,26 @@ $ git config --global user.email johndoe@example.com
 [5]:https://www.cual-es-mi-ip.net/
 
 [8]:https://man7.org/linux/man-pages/man8/ifconfig.8.html
-[9]:https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/getmac
 [10]:https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/ipconfig
 [11]:https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/arp
 [12]:https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/ping
 [13]:https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/tracert
 
-
 ---
+
 ## Mas Recursos
+
 - [Protocolo Ipv4](https://es.wikipedia.org/wiki/IPv4) (Wikipedia)
 - [Direccionamiento IP](https://es.wikipedia.org/wiki/Direcci%C3%B3n_IP) (Wikipedia)
 - [Calculadora IP](https://www.calculator.net/ip-subnet-calculator.html) (Wikipedia)
 
 ---
+
 ## Evaluación y rúbrica
+
 - Fecha máximo entrega: 05 de Mayo de 2023
-- Hora de entrega: 11:59pm	
-- Nota máxima: 5.0 
+- Hora de entrega: 11:59pm 
+- Nota máxima: 5.0
 - Número de actividades: 10
 - Valor de cada actividad: 0.5
 - Ponderación: 20%

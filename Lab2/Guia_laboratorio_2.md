@@ -43,7 +43,7 @@ Para todos los efectos:
 ## 3. [Caracterizar el CPE TP-LINK](#) ✔
 |Parámetro||Valor|
 |--|:--:|--:|
-|Marca|-->||
+|Marca|-->|100|
 |Referencia|-->||
 |Velocidad de la CPU|-->||
 |Tamaño de la memoria RAM|-->||
